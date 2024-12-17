@@ -1,4 +1,4 @@
-/* Reset CSS để đồng nhất các trình duyệt */
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -8,60 +8,54 @@
 
 /* Căn chỉnh toàn bộ trang */
 body {
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #f4f7f6; /* Màu nền nhẹ nhàng */
+    color: #333; /* Màu chữ chính */
     line-height: 1.6;
     padding: 20px;
 }
 
+/* Căn giữa tiêu đề */
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 2em;
-    color: #0078D7;
+    font-size: 2.5em;
+    color: #0078D7; /* Màu xanh nổi bật */
 }
 
-p {
-    display: inline;
-    margin: 10px 0 5px;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="number"],
-input[type="date"],
-input[type="color"],
-input[type="range"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="search"],
-input[type="url"] {
+/* Tạo khoảng cách và màu sắc cho các input */
+.input__space-after-bar {
+    display: block;
     width: 100%;
     max-width: 400px;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Hover và focus cho input */
-input:focus {
+.input__space-after-bar:focus {
     border-color: #0078D7;
+    box-shadow: 0 0 8px rgba(0, 120, 215, 0.3);
     outline: none;
 }
 
-/* Checkbox và radio */
-input[type="checkbox"],
-input[type="radio"] {
+/* Radio và Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
     margin-right: 10px;
 }
 
+/* Label và đoạn văn */
+p {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Nút Submit */
 input[type="submit"] {
     display: block;
     width: 100%;
@@ -81,41 +75,23 @@ input[type="submit"]:hover {
     background-color: #005fb8;
 }
 
-/* Responsive design */
+/* Responsive Design */
 @media screen and (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
     h1 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
-
-    input[type="text"],
-    input[type="password"],
-    input[type="number"],
-    input[type="date"],
-    input[type="color"],
-    input[type="range"],
-    input[type="month"],
-    input[type="week"],
-    input[type="time"],
-    input[type="datetime-local"],
-    input[type="email"],
-    input[type="search"],
-    input[type="url"] {
+    .input__space-after-bar {
         font-size: 0.9em;
-        padding: 8px;
-    }
-
-    input[type="submit"] {
-        font-size: 1em;
         padding: 8px;
     }
 }
 
 @media screen and (max-width: 480px) {
     h1 {
-        font-size: 1.2em;
+        font-size: 1.5em;
+    }
+    .input__space-after-bar {
+        font-size: 0.8em;
+        padding: 6px;
     }
 }
