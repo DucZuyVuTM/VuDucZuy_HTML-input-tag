@@ -1,0 +1,10 @@
+# Имя: Ву Дык Зуй ; Группа: ИКБО-10-23
+
+services:
+  apache_web:
+    image: httpd:latest # Используем официальный образ Apache
+    container_name: apache_server
+    ports:
+      - "8080:80"  # Перенаправляем порт 8080 на порт 80 контейнера
+    volumes:
+      - ./src:/usr/local/apache2/htdocs/  # Подключаем директорию с сайтом к директории Apache
