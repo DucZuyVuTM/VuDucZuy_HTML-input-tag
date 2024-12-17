@@ -56,6 +56,14 @@ p {
     color: #444;
 }
 
+/* Màu sắc */
+input[type="color"] {
+    border: 2px solid #ccc; /* Đường viền hiển thị */
+    border-radius: 4px;
+    padding: 5px;
+    width: auto;
+}
+
 /* Nút Submit */
 input[type="submit"] {
     display: block;
