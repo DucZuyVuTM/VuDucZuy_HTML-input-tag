@@ -50,6 +50,7 @@ input[type="checkbox"] {
 
 /* Label và đoạn văn */
 p {
+    display: inline;
     margin: 10px 0 5px;
     font-weight: bold;
     color: #444;
