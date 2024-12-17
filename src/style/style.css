@@ -61,11 +61,6 @@ input[type="color"] {
     appearance: auto;
     -webkit-appearance: auto;
     -moz-appearance: auto;
-
-    border: 2px solid #ccc; /* Đường viền hiển thị */
-    border-radius: 4px;
-    padding: 5px;
-    width: auto;
 }
 
 /* Nút Submit */
